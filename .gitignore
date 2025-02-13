@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+*.env
+
+# Logs and database
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Cache
+.cache/
+pip-wheel-metadata/
+
+# Pytest & testing-related files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+*.egg-info/
+dist/
+build/
+
+# FastAPI-specific
+instance/
