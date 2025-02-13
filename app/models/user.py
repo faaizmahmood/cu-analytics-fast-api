@@ -2,10 +2,11 @@ from sqlalchemy import Column, Integer, String
 from ..db.database import Base
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "user"
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, index=True)
-    hashed_password = Column(String)
+    name = Column(String, nullable=False)
+    email = Column(String, unique=True, index=True, nullable=False)  # Ensure it's defined
+    hashed_password = Column(String, nullable=False)
 
-    __table_args__ = {"extend_existing": True}  # Add this line
+    __table_args__ = {"extend_existing": True} 
